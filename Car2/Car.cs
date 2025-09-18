@@ -14,6 +14,20 @@ namespace Car2
         public int HorsePower;
         public CarType CarType;
 
+        public Car( 
+            string brand, 
+            string color, 
+            int maxSpeed, 
+            int horsePower,
+            CarType carType) 
+        {
+            Brand  = brand;
+            Color = color;
+            MaxSpeed = maxSpeed;
+            HorsePower = horsePower;
+            CarType = carType;
+        }
+
         public void ShowInfo()
         {
             Console.WriteLine($"Car Brand: {Brand}, Color: {Color}, Max Speed: {MaxSpeed} with horsepower of: {HorsePower} and the type of fuel is {CarType} ");

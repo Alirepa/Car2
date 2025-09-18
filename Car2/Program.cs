@@ -4,21 +4,14 @@
     {
         static void Main(string[] args)
         {
-            Car ferrari = new Car();
-            ferrari.Brand = "Ferrari";
-            ferrari.Color = "Red";
-            ferrari.MaxSpeed = 350;
-            ferrari.HorsePower = 600;
-            ferrari.CarType = CarType.Gas;
+            var ferrari = new Car("Ferrari", "Red", 350, 600, CarType.Gas);
+            
 
 
-            Car volvo = new Car();
-            volvo.Brand = "Volvo";
-            volvo.Color = "Black";
-            volvo.MaxSpeed = 250;
-            volvo.HorsePower = 300;
-            volvo.CarType = CarType.Hybrid;
+            var volvo = new Car("Volvo", "Black", 250, 300, CarType.Hybrid);
 
+
+            
             ferrari.ShowInfo();
             ferrari.Drive();
             ferrari.Honk();
